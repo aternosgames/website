@@ -8,14 +8,13 @@
 
 <script lang="ts">
 
-    import { Component, Prop, Vue } from 'vue-property-decorator';
+    import { Component, Prop, Vue } from "vue-property-decorator";
 
-    @Component
+@Component
     export default class AgContainer extends Vue {
-        
         @Prop({ type: Boolean, default: true }) private expandVertically!: boolean;
+
         @Prop(Boolean) private fluid!: boolean;
-    
     }
 
 </script>
