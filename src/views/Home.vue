@@ -1,3 +1,18 @@
+<script lang="ts">
+
+    import { Component, Vue } from "vue-property-decorator";
+
+    import AgContainer from "@/components/AgContainer.vue";
+
+    @Component({
+        components: {
+            AgContainer
+        },
+    })
+    export default class Home extends Vue {}
+
+</script>
+
 <template>
 
     <ag-container expand-vertically="true">
@@ -9,26 +24,11 @@
                 <h2>An <em>open-source</em>, <em>community-driven</em> and <em>ad-supported</em> Minecraft 1.13 network. Made by Aternos.</h2>
             </div>
 
-            <p>&copy; 2018 Aternos</p>
+            <p>&copy; 2018 Aternos UG (haftungsbeschränkt)</p>
         </section>
     </ag-container>
 
 </template>
-
-<script lang="ts">
-
-    import { Component, Vue } from 'vue-property-decorator';
-    
-    import AgContainer from '@/components/AgContainer.vue';
-
-    @Component({
-        components: {
-            AgContainer
-        },
-    })
-    export default class Home extends Vue {}
-
-</script>
 
 <style lang="scss" scoped>
 
