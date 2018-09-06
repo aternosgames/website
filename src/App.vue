@@ -8,7 +8,9 @@
 
 <style lang="scss">
 
+    @import "style/_breakpoints";
     @import "style/_colors";
+    @import "style/_fonts";
 
     * {
         margin: 0;
@@ -33,7 +35,7 @@
         font-style: normal;
         font-weight: 400;
         line-height: 1.42857142857143;
-        overflow-y: hidden;
+        overflow-x: hidden;
         -ms-overflow-style: -ms-autohiding-scrollbar;
         -webkit-text-decoration-skip: ink;
     }
