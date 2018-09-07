@@ -27,7 +27,7 @@
                 const nav = (<HTMLElement>document.querySelector("nav.ag-navigation"));
                 window.addEventListener("scroll", ev => {
                     const height = nav.offsetWidth < 600 ? 64 : nav.offsetHeight;
-                    this.isScaled = window.scrollY >= ((<HTMLElement>document.querySelector(this.scrollTarget)).offsetTop + (<HTMLElement>document.querySelector(this.scrollTarget)).offsetHeight - height);
+                    this.isScaled = window.scrollY >= ((<HTMLElement>document.querySelector(this.scrollTarget)).offsetTop + (<HTMLElement>document.querySelector(this.scrollTarget)).offsetHeight - height - 1);
                 });
             }
         }
