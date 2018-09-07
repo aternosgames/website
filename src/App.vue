@@ -8,7 +8,9 @@
 
 <style lang="scss">
 
+    @import "style/_breakpoints";
     @import "style/_colors";
+    @import "style/_fonts";
 
     * {
         margin: 0;
@@ -33,13 +35,14 @@
         font-style: normal;
         font-weight: 400;
         line-height: 1.42857142857143;
-        overflow-y: hidden;
+        overflow-x: hidden;
         -ms-overflow-style: -ms-autohiding-scrollbar;
         -webkit-text-decoration-skip: ink;
     }
 
     #app {
         min-height: 100vh;
+        padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
     }
 
 </style>
