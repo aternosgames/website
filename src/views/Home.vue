@@ -4,11 +4,13 @@
 
     import AgContainer from "@/components/AgContainer.vue";
     import AgNavigation from "@/components/AgNavigation.vue";
+    import AgNavigationAnchor from "@/components/AgNavigationAnchor.vue";
 
     @Component({
         components: {
             AgContainer,
-            AgNavigation
+            AgNavigation,
+            AgNavigationAnchor
         },
     })
     export default class Home extends Vue {}
@@ -35,7 +37,8 @@
             </section>
         </ag-container>
 
-        <section id="about" class="promo">
+        <ag-navigation-anchor id="about" />
+        <section class="promo">
             <ag-container>
                 <article class="promo-article">
                     <h1>About</h1>
@@ -44,7 +47,8 @@
             </ag-container>
         </section>
 
-        <section id="financing" class="promo">
+        <ag-navigation-anchor id="financing" />
+        <section class="promo">
             <ag-container>
                 <article class="promo-article">
                     <h1>Financing</h1>
@@ -53,7 +57,8 @@
             </ag-container>
         </section>
 
-        <section id="team" class="promo">
+        <ag-navigation-anchor id="team" />
+        <section class="promo">
             <ag-container>
                 <article class="promo-article">
                     <h1>Team</h1>
@@ -62,7 +67,8 @@
             </ag-container>
         </section>
 
-        <section id="roadmap" class="promo">
+        <ag-navigation-anchor id="roadmap" />
+        <section class="promo">
             <ag-container>
                 <article class="promo-article">
                     <h1>Roadmap</h1>

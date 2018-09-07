@@ -1,2 +1,5 @@
 // vue.config.js
-module.exports = { lintOnSave: false };
+module.exports = {
+    baseUrl: "./",
+    lintOnSave: false
+};

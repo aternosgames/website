@@ -24,8 +24,10 @@
             }
 
             if (this.scrollTarget && document.querySelector(this.scrollTarget)) {
+                const nav = (<HTMLElement>document.querySelector("nav.ag-navigation"));
                 window.addEventListener("scroll", ev => {
-                    this.isScaled = window.scrollY >= ((<HTMLElement>document.querySelector(this.scrollTarget)).offsetTop + (<HTMLElement>document.querySelector(this.scrollTarget)).offsetHeight);
+                    const height = nav.offsetWidth < 600 ? 64 : nav.offsetHeight;
+                    this.isScaled = window.scrollY >= ((<HTMLElement>document.querySelector(this.scrollTarget)).offsetTop + (<HTMLElement>document.querySelector(this.scrollTarget)).offsetHeight - height);
                 });
             }
         }
@@ -58,6 +60,7 @@
         position: fixed;
         transition: all .2s ease;
         width: 100%;
+        z-index: 99999;
 
         @include for-desktop-up {
             height: 88px;
@@ -119,11 +122,22 @@
         font-size: 15px;
         font-weight: 500;
         text-decoration: none;
+        transition: all .4s ease;
     }
 
     @include for-phone-only {
         nav.ag-navigation {
             height: auto;
+
+            transition: all .2s ease, height .4s ease .4s;
+
+            &.scaled {
+                height: 64px;
+            }
+
+            a {
+                margin: 9px 0;
+            }
         }
 
         section.navigation-inner {
