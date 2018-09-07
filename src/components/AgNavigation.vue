@@ -6,28 +6,27 @@
     export default class AgNavigation extends Vue {
 
         @Prop(Boolean) private fluid!: boolean;
+
         @Prop(String) private scrollTarget!: string;
 
         private isScaled: boolean = false;
 
         mounted(): void {
             if (document.querySelector("a")) {
-                document.querySelectorAll("a").forEach(el => {
-                    el.addEventListener("click", ev => {
+                document.querySelectorAll("a").forEach((el) => {
+                    el.addEventListener("click", (ev) => {
                         ev.preventDefault();
 
-                        (<HTMLElement>document.querySelector(el.getAttribute("href") + "")).scrollIntoView({
-                            behavior: "smooth"
-                        });
+                        (document.querySelector(`${el.getAttribute("href")}`) as HTMLElement).scrollIntoView({ behavior: "smooth" });
                     });
-                })
+                });
             }
 
             if (this.scrollTarget && document.querySelector(this.scrollTarget)) {
-                const nav = (<HTMLElement>document.querySelector("nav.ag-navigation"));
-                window.addEventListener("scroll", ev => {
+                const nav = (document.querySelector("nav.ag-navigation") as HTMLElement);
+                window.addEventListener("scroll", (ev) => {
                     const height = nav.offsetWidth < 600 ? 64 : nav.offsetHeight;
-                    this.isScaled = window.scrollY >= ((<HTMLElement>document.querySelector(this.scrollTarget)).offsetTop + (<HTMLElement>document.querySelector(this.scrollTarget)).offsetHeight - height - 1);
+                    this.isScaled = window.scrollY >= ((document.querySelector(this.scrollTarget) as HTMLElement).offsetTop + (document.querySelector(this.scrollTarget) as HTMLElement).offsetHeight - height - 1);
                 });
             }
         }
@@ -127,9 +126,9 @@
 
     @include for-phone-only {
         nav.ag-navigation {
-            height: auto;
-
+            height: 115px;
             transition: all .2s ease, height .4s ease .4s;
+
 
             &.scaled {
                 height: 64px;

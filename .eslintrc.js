@@ -25,7 +25,7 @@ module.exports = {
         "lines-around-comment": ["error", {
             "afterBlockComment": true, "beforeBlockComment": true, "beforeLineComment": true, "allowBlockStart": true, "allowClassStart": true
         } ],
-        "lines-between-class-members": "error",
+        "lines-between-class-members": ["error", "always", { exceptAfterSingleLine: true } ],
         "max-depth": "off",
         "max-len": "off",
         "max-lines": "off",
