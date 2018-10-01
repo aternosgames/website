@@ -26,12 +26,10 @@
     }
 
     body {
-        // background-color: $light;
-        background-image: linear-gradient(165deg, $primary, $dark-primary);
-
+        background-color: $light;
         color: $dark;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 14px;
+        font-size: 16px;
         font-style: normal;
         font-weight: 400;
         line-height: 1.42857142857143;

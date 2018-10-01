@@ -31,7 +31,7 @@
 
     <div class="ag-progress">
         <div class="steps">
-            <div v-for="step in this.steps" :key="step.id" :class="['step', { completed: step.completed }, { wip: step.wip }]"  :style="{ width: stepWidth }">
+            <div v-for="step in this.steps" :key="step.id" :class="['step', { completed: step.completed }, { wip: step.wip }]" :style="{ width: stepWidth }">
                 <div class="indicator"></div>
                 <p class="title">{{ step.title }}</p>
                 <p>{{ step.description }}</p>
