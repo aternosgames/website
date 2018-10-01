@@ -24,10 +24,12 @@
     <div class="page">
 
         <ag-navigation scrollTarget="#hero">
+            <a href="https://discord.gg/UYYRrg9" class="no-js discord" style="font-size: 26px"><i class="fab fa-discord"></i></a>
             <a href="#about">About</a>
             <a href="#how">How?</a>
             <a href="#participate">Participate</a>
             <a href="#roadmap">Roadmap</a>
+            <a href="https://github.com/aternosgames" class="no-js github" style="font-size: 26px"><i class="fab fa-github"></i></a>
         </ag-navigation>
 
         <div class="gradient-background">
@@ -49,15 +51,15 @@
                     <p>We want to create a completely new Minecraft minigame experience. To achieve this, we are reconsidering all basic concepts of existing minigame networks. These are our main approaches:</p>
                     <div class="flex">
                         <div>
-                            <h4>Free</h4>
+                            <h4><i class="fab fa-creative-commons-nc"></i>Free</h4>
                             <p>We want to treat every player the same. There is no possibility to pay for anything, no paid ranks, no paid cosmetics and no paid loot boxes.</p>
                         </div>
                         <div>
-                            <h4>Community-driven</h4>
+                            <h4><i class="fas fa-users"></i>Community-driven</h4>
                             <p>We want to give everyone the ability to participate in creating a healthy community. Everybody can help to moderate the network and collectively punish bad behaviour.</p>
                         </div>
                         <div>
-                            <h4>Open-source</h4>
+                            <h4><i class="fab fa-osi"></i>Open-source</h4>
                             <p>We want to give every developer the opportunity to contribute. Every single line of code is open sourced under the MIT license so that it is available for everyone.</p>
                         </div>
                     </div>
@@ -83,19 +85,19 @@
                     <p>We need <strong>you</strong>. Creating a (cool) Minecraft minigame network is hard, but it is impossible without you, you talented beautiful person. But how can you help?</p>
                     <div class="flex">
                         <div>
-                            <h4>Develop</h4>
-                            <p>Everything is open source, just head into our GitHub repositories and start coding wherever you want. If you have questions or want to talk to other developers, join our Discord server.</p>
+                            <h4><i class="fas fa-code"></i>Develop</h4>
+                            <p>Everything is open source, just head into our <a href="https://github.com/aternosgames">GitHub repositories</a> and start coding wherever you want. If you have questions or want to talk to other developers, join our Discord server.</p>
                         </div>
                         <div>
-                            <h4>Build</h4>
+                            <h4><i class="fas fa-cubes"></i>Build</h4>
                             <p>Materialising your dreams block by block in Minecraft is your passion? Join our Discord server to meet like-minded players and get to know when anybody needs your talent to create amazing maps.</p>
                         </div>
                         <div>
-                            <h4>Concept</h4>
+                            <h4><i class="fas fa-pencil-alt"></i>Concept</h4>
                             <p>Do you have ideas? Do you want to write the concept for a minigame? Meet with other creative minds on our Discord server and start hatching your ideas to become living dreams.</p>
                         </div>
                         <div>
-                            <h4>Moderate</h4>
+                            <h4><i class="far fa-life-ring"></i>Moderate</h4>
                             <p>Do you get on well with people and want to help to keep the community healthy? We are really glad and you are welcome on our Discord server to engage with others and start moderating when the network goes online. A special application is not necessary.</p>
                         </div>
                     </div>
@@ -160,7 +162,7 @@
 
         <div class="gradient-background">
             <ag-container class="footer">
-                <p>&copy; 2018 Aternos</p>
+                <p>&copy; 2018 Aternos Games &mdash; Powered by Aternos &ndash; <a href="https://aternos.org/imprint">Imprint</a> &ndash; <a href="https://aternos.org/privacy">Privacy Policy</a></p>
             </ag-container>
         </div>
 
@@ -233,7 +235,7 @@
 
     h4 {
         font-weight: 600;
-        margin-bottom: .5em;
+        margin-bottom: .75em;
     }
 
     // section.promo {
@@ -265,10 +267,22 @@
             margin-top: 4em;
             text-align: center;
         }
+
+        .svg-inline--fa {
+            font-size: 20px;
+            margin: 0 .75em 0 0;
+            vertical-align: text-bottom;
+        }
     }
 
     .footer {
         color: $light;
+
+        a {
+            border-bottom: 1px solid;
+            color: $light;
+            text-decoration: none;
+        }
     }
 
 </style>

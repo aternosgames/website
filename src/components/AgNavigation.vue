@@ -12,8 +12,8 @@
         private isScaled: boolean = false;
 
         mounted(): void {
-            if (document.querySelector("a")) {
-                document.querySelectorAll("a").forEach((el) => {
+            if (document.querySelector(".ag-navigation a:not(.no-js)")) {
+                document.querySelectorAll(".ag-navigation a:not(.no-js)").forEach((el) => {
                     el.addEventListener("click", (ev) => {
                         ev.preventDefault();
 
@@ -135,7 +135,7 @@
             }
 
             a {
-                margin: 9px 0;
+                margin: 4px 0;
             }
         }
 
@@ -164,8 +164,16 @@
             order: 3;
         }
 
+        .discord {
+            order: 0;
+        }
+
+        .github {
+            order: 5;
+        }
+
         @for $i from 1 through 4 {
-            a:nth-of-type(#{$i}) {
+            a:not(.no-js):nth-of-type(#{$i}) {
                 @if $i < 3 {
                     order: #{$i};
                 }
@@ -185,8 +193,16 @@
             order: 3;
         }
 
+        .discord {
+            order: 0;
+        }
+
+        .github {
+            order: 5;
+        }
+
         @for $i from 1 through 4 {
-            a:nth-of-type(#{$i}) {
+            a:not(.no-js):nth-of-type(#{$i}) {
                 @if $i < 3 {
                     order: #{$i};
                 }
@@ -194,6 +210,16 @@
                     order: #{$i + 1};
                 }
             }
+        }
+    }
+
+    @include for-desktop-up {
+        .discord {
+            order: 5;
+        }
+
+        .github {
+            order: 6;
         }
     }
 
