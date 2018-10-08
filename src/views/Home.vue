@@ -24,7 +24,7 @@
     <div class="page">
 
         <ag-navigation scrollTarget="#hero">
-            <a href="https://discord.gg/UYYRrg9" class="no-js discord" style="font-size: 26px"><i class="fab fa-discord"></i></a>
+            <a href="https://aternos.games/discord" class="no-js discord" style="font-size: 26px"><i class="fab fa-discord"></i></a>
             <a href="#about">About</a>
             <a href="#how">How?</a>
             <a href="#participate">Participate</a>
@@ -102,7 +102,7 @@
                         </div>
                     </div>
 
-                    <h2><a href="https://discord.gg/UYYRrg9" style="color: inherit; text-decoration: none">Join our Discord server now!</a></h2>
+                    <h2><a href="https://aternos.games/discord" style="color: inherit; text-decoration: none">Join our Discord server now!</a></h2>
                 </article>
             </ag-container>
         </section>
