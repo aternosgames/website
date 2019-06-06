@@ -37,7 +37,7 @@
                 <section class="hero-content">
                     <div>
                         <h1>Aternos Games</h1>
-                        <h2>An <em>all open-source</em>, <em>international</em>, <em>community-driven</em> and <em>100% free</em> Minecraft 1.13 minigame network.</h2>
+                        <h2>An <em>all open-source</em>, <em>international</em>, <em>community-driven</em> and <em>100% free</em> Minecraft 1.14 minigame network.</h2>
                     </div>
                 </section>
             </ag-container>
